@@ -1,0 +1,32 @@
+/* Menu.css */
+.navbar {
+  background-color: rgb(242, 244, 245);
+  padding: 1rem 0;
+    }
+
+.menu-list {
+  list-style: none;
+  display: flex;
+ align-items: center; /*centrado eje y*/
+  justify-content: center;
+  gap: 4rem; /*espaciado entre los elementos*/
+  margin: 0;
+  padding: 0;
+  
+}
+
+.menu-item a {
+  color: rgb(24, 23, 23);
+  text-decoration: none;
+  font-weight: 600; /*Grosor de la fuente*/
+  transition: color 0.3s;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal; /*variantes smallcaps*/
+   font-size: 1.4em;  /*Relativo al contenedor */
+
+}
+
+.menu-item a:hover {
+  color: rgb(63, 182, 241);
+}

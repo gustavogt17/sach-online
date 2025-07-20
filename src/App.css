@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.read-the-docs {
+  color: #e45555;
+}
+
+.mi-caja1 {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Imagen a la izquierda, texto ocupa el resto */
+  gap: 20px;
+  align-items: center;
+  background-color: rgb(242, 244, 245);
+}
+
+.image-style {
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   height: auto;
+   object-fit: cover;
+}
+
+.image-style2 {     /*facebook*/
+  width:  50px;   
+ margin-right:40px;
+ border-radius: 79%;
+  justify-content: flex-end;
+}
+
+.image-style3 {   /*youtube*/
+  width:  50px;   
+   margin-right:-60px;
+  border-radius: 99%;
+  justify-content: flex-end;
+}
+
+.image-style4 {     /*instagram*/
+  width:  92px;   
+ margin-right:-78px;
+  justify-content: flex-end;
+}

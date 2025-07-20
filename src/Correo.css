@@ -1,0 +1,107 @@
+/* Estilos generales */
+.email-container {
+    display: inline-flex;
+  
+  margin: 0 auto;
+  padding: 3rem;
+  font-style: normal;
+  font-variant: normal;
+  background-color: #d4cacf6b;
+  border-radius: 5px;
+  box-shadow: 0 6px 8px rgba(95, 79, 236, 0.1);
+  font-weight: 600;
+  font-size: 1.4em; 
+   position: relative;
+
+
+
+}
+
+
+
+
+
+/* Grupo de input */
+.input-group {
+  
+  flex-direction: column;
+  gap: 0.5rem;
+   
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.9rem;
+   
+}
+
+/* Input de email */
+.email-input {
+
+
+margin-left: 50px;
+margin-right: -100px;
+  padding: 1rem 5rem;
+  border: 2px solid #e4e9eb;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.email-input:focus {
+    
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.email-input::placeholder {
+  color: #bdc3c7;
+}
+
+/* Estado inválido */
+.input-group.invalid .email-input {
+  border-color: #e74c3c;
+}
+
+.input-group.invalid .email-input:focus {
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+/* Botón de enviar */
+.submit-btn {
+
+border-radius: 30px;
+   
+  padding: 0.8rem 1.5rem;
+  background-color: #777feb;
+  color: rgb(227, 229, 238);
+ 
+  
+  
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.submit-btn:hover {
+  background-color: #3104fa;
+}
+
+.submit-btn:disabled {
+  background-color: #f51919;
+  cursor: not-allowed;
+}
+
