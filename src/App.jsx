@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-
+import bann from './componentes/banner.jpg'
 import sacLogo from './assets/sac1.png'
 import instm from './assets/ins.png'
 import yout from './assets/you.png'
@@ -8,16 +8,19 @@ import faceb from './assets/face.png'
 import './Menu.css'; // Importa el CSS
 import './Correo.css'
 import './App.css'
+import banmp4 from './componentes/baanner.mp4'
 
 
-
-
-
-
-
+ 
 
 
 function App() {
+
+
+  
+
+
+
 
   const [email, setEmail] = useState('');
 
@@ -74,7 +77,7 @@ function App() {
               />
             </a>
 
-            <a href="https://www.facebook.com/SACHAviacion" target="_blank">
+            <a  href="https://www.facebook.com/SACHAviacion" target="_blank">
               <img
                 src={faceb}
                 alt="facebook"
@@ -86,25 +89,19 @@ function App() {
 
       </div>
 
+        
+        <div className="video-container">
+        <video autoPlay loop muted className="custom-video">
+          <source src={banmp4} type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+      </div>
+      
 
 
 
 
-
-
-
-      <p className='sa'>
-        ESTAS EN <code>SACH.COM</code> VUELA ALTO
-      </p>
-
-
-
-
-
-      <p
-        className="read-the-docs">
-        sitio en construccion
-      </p>
+      
 
 
       <div class="email-container">
@@ -134,9 +131,24 @@ function App() {
 
       </div>
 
+          
+
+        
+      
+
+      <p className='sa'>
+        ESTAS EN <code>SACH.COM</code> VUELA ALTO
+      </p>
 
 
 
+
+
+      <p
+        className="read-the-docs">
+        sitio en construccion
+      </p>
+     
 
 
 

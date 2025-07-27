@@ -3,7 +3,7 @@
     display: inline-flex;
   
   margin: 0 auto;
-  padding: 3rem;
+  padding: 5rem;
   font-style: normal;
   font-variant: normal;
   background-color: #d4cacf6b;
@@ -11,10 +11,10 @@
   box-shadow: 0 6px 8px rgba(95, 79, 236, 0.1);
   font-weight: 600;
   font-size: 1.4em; 
-   position: relative;
-
-
-
+  position: relative;
+  margin-top: -70px;
+  
+  z-index: 1;
 }
 
 

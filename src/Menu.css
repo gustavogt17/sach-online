@@ -2,6 +2,7 @@
 .navbar {
   background-color: rgb(242, 244, 245);
   padding: 1rem 0;
+  z-index: 1;
 }
 
 .menu-list {
@@ -14,7 +15,8 @@
   /*espaciado entre los elementos*/
   margin: 0;
   padding: 0;
-
+  z-index: 1;
+ 
 }
 
 .menu-item a {
@@ -29,9 +31,11 @@
   /*variantes smallcaps*/
   font-size: 1.4em;
   /*Relativo al contenedor */
+  z-index: 1;
 
 }
 
 .menu-item a:hover {
   color: rgb(63, 182, 241);
+  z-index: 1;
 }
