@@ -11,6 +11,10 @@
 .read-the-docs {
   color: #e45555;
 }
+ 
+.colorboxes{
+  color:  rgba(242, 244, 245);
+}
 
 .mi-caja1 {
   display: grid;
@@ -61,19 +65,6 @@
   z-index: 1;  /*posicion de el grafico con respecto a la caja(ensimado)*/
 }
 
-.banne {
- 
-  width: 1350px;
-  margin-top: -80px;
-  margin-left: -35px;
-  justify-content: center;
-  
-  z-index: -1; /*posicion de el grafico con respecto a la caja(ensimado)*/
-}
-
-
-
-
 
 .video-container {
   display: flex;
@@ -91,3 +82,74 @@ height: auto;
   border-radius: 0%;
  
 }
+
+.mi-caja2 {
+  display: grid;
+  grid-template-columns: auto 55cap;
+  /* Imagen a la izquierda, texto ocupa el resto */
+  gap: 20px;
+  align-items: center;
+ background-color: rgb(255, 255, 255);
+  z-index: -1; /*posicion de el grafico con respecto a la caja(ensimado)*/
+  position: relative;
+  margin-top: 30px;
+  
+  
+}
+
+.banne2 {
+  width: 600px;
+  justify-content: center;
+  z-index: 1; /*posicion de el grafico con respecto a la caja(ensimado)*/
+}
+
+.text1 {
+  list-style: none;
+  display: flex;
+  font-size: 3.1rem;
+  justify-content: center;
+  gap: 4rem;
+  /*espaciado entre los elementos*/
+  margin: 1%;
+  padding: 0;
+  z-index: 1;
+  font-style: normal;
+  font-variant: normal;
+  margin-right: 20%;
+  font-weight: 800; /*grosor de fuente*/
+ 
+}
+
+.text2 {
+  list-style: none;
+  display: flex;
+  text-align: justify;
+  font-size: 1.5rem;
+  gap: 4rem;
+  /*espaciado entre los elementos*/
+  margin: 1%;
+  padding: 1%;
+  z-index: 1;
+  font-style: normal;
+  font-variant: normal;
+  margin-right: 10%;
+  font-weight: 500; /*grosor de fuente*/
+ 
+}
+
+.list1 {
+  list-style: none;
+  text-align: left;
+  font-size: 1.4rem; /*tamaó de fuente*/
+  gap: 1rem;
+  /*espaciado entre los elementos*/
+  margin: 5%;
+  padding: 0%;
+  z-index: 1;
+  font-style: normal;
+  font-variant: normal;
+  list-style-type: disc; /* o circle, square, etc. */
+ color: black;
+ font-weight: 500; /*grosor de fuente*/
+}
+

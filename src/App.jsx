@@ -1,6 +1,5 @@
 import { useState } from 'react'
-
-import bann from './componentes/banner.jpg'
+import './index.css' // Importa el CSS de tailwind
 import sacLogo from './assets/sac1.png'
 import instm from './assets/ins.png'
 import yout from './assets/you.png'
@@ -9,7 +8,7 @@ import './Menu.css'; // Importa el CSS
 import './Correo.css'
 import './App.css'
 import banmp4 from './componentes/baanner.mp4'
-
+import {Card, CardHeader, CardBody, Typography, Button} from "@material-tailwind/react";
 
  
 
@@ -17,7 +16,14 @@ import banmp4 from './componentes/baanner.mp4'
 function App() {
 
 
-  
+
+
+  const carreras = [
+    "Piloto Privado y Comercial de Ala Fija",
+    "Sobrecargo de Aviación",
+    "Oficial de Operaciones Aeronáuticas",
+    "Técnico en Mantenimiento Clases I y II",
+  ];
 
 
 
@@ -131,16 +137,49 @@ function App() {
 
       </div>
 
-          
+ 
+ 
 
         
       
 
-      <p className='sa'>
-        ESTAS EN <code>SACH.COM</code> VUELA ALTO
-      </p>
+    
+
+      <div class="mi-caja2" > 
+       
+       <video autoPlay loop muted className="banne2">
+          <source src={banmp4} type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+        
+        <div>
+        <p className='text1'>
+          !Vive tus sueños!
+        </p>
+       
+        <p className='text2'>
+          Somos un Centro de Formación, Capacitación y adiestramiento, con número de Permiso F-178, otorgado por la Agencia Federal de Aviación Civil con los siguientes cursos:
+        </p>
+
+        <p>
+        <ul className='list1'>
+          
+        {carreras.map((carreras, index) => (
+        <li key={index}>{carreras}</li>
+        ))}
+        </ul>
+        </p>
+        </div>
+        </div>
 
 
+
+
+            <ul>
+           {carreras.map((carreras, index) => (
+            <li key={index}>{carreras}</li>
+            ))}
+            </ul>
 
 
 
@@ -152,6 +191,9 @@ function App() {
 
 
 
+        <p className='sa'>
+        ESTAS EN <code>SACH.COM</code> VUELA ALTO
+      </p>
 
 
 
