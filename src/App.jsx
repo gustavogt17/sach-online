@@ -8,6 +8,7 @@ import './Menu.css'; // Importa el CSS
 import './Correo.css'
 import './App.css'
 import banmp4 from './componentes/baanner.mp4'
+import autog from './componentes/autogiro.mp4'
 import {Card, CardHeader, CardBody, Typography, Button} from "@material-tailwind/react";
 
  
@@ -98,7 +99,7 @@ function App() {
         
         <div className="video-container">
         <video autoPlay loop muted className="custom-video">
-          <source src={banmp4} type="video/mp4" />
+          <source src={autog} type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
       </div>
